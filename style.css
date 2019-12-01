@@ -1,0 +1,85 @@
+* { box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid blueviolet;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+._button {
+    background-color: crimson;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.button-feadback {
+    background-image: url('chart.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.button-phone {
+    background-image: url('phone.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.button-close {
+    background-image: url('close.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+.modal-chart {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+}
+
+.modal-feadback-320 {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    width: 320px;
+    min-height: 100vh;
+    height: auto;
+    /* border: 1px solid grey; */
+    background-color: white;
+    
+}
+
+.modal-phone {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+}
+
+._visible {
+    display: block;
+}
